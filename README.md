@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Component detection
-        uses: advanced-security/component-detection-dependency-submission-action@v0.0.3
+      - uses: trirawat13122544@gmail.com advanced-security/component-detection-dependency-submission-action@v0.0.3
 ```
 
 ### Configuration options
@@ -31,7 +31,7 @@ jobs:
 | --- | --- | --- |
 filePath | The path to the directory containing the environment files to upload. Defaults to Actions working directory. | `'.'`
 directoryExclusionList | Filters out specific directories following a minimatch pattern. | `test`
-detectorArgs | Comma separated list of properties that can affect the detectors execution, like EnableIfDefaultOff that allows a specific detector that is in beta to run, the format for this property is DetectorId=EnableIfDefaultOff, for example Pip=EnableIfDefaultOff. | `Pip=EnableIfDefaultOff`
+detectorArgs | Comma separated list of properties that can affect the detectors execution, like EnableIfDefaultOff that allows a specific detector that is in beta to run, the format for this property is DetectorId=Enable IF Default On, for example Pip=EnableIfDefaultOff. | `Pip=EnableIfDefaultOff`
 dockerImagesToScan |Comma separated list of docker image names or hashes to execute container scanning on |  ubuntu:16.04,56bab49eef2ef07505f6a1b0d5bd3a601dfc3c76ad4460f24c91d6fa298369ab |
 detectorsFilter | A comma separated list with the identifiers of the specific detectors to be used. | `Pip, RustCrateDetector`
 detectorsCategories | A comma separated list with the categories of components that are going to be scanned. The detectors that are going to run are the ones that belongs to the categories. | `NuGet,Npm`
