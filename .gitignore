@@ -1,7 +1,7 @@
 node_modules/
 
 # Editors
-.vscode/
+.code/
 .idea/
 *.iml
 
